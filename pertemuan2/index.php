@@ -8,7 +8,7 @@ Mempelajari mengenai sintaks PHP
 */
 ?>
 <?php
-// pertemuan 2 - pw2021_203040039
+// pertemuan 2 - PHP Dasar 
 // Sintaks PHP
 
 // Standar Output
