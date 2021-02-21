@@ -8,7 +8,11 @@ Mempelajari mengenai sintaks PHP
 */
 ?>
 <?php
+<<<<<<< HEAD
 // pertemuan 2 - PHP Dasar 
+=======
+// pertemuan 2 - PHP Dasar
+>>>>>>> cd0f59e (menyelesaikan video pertemuan 2)
 // Sintaks PHP
 
 // Standar Output
@@ -63,4 +67,7 @@ Mempelajari mengenai sintaks PHP
 // var_dump($x < 20 || $x % 2 == 0 );
 
 ?>
+<<<<<<< HEAD
 
+=======
+>>>>>>> cd0f59e (menyelesaikan video pertemuan 2)
