@@ -19,7 +19,7 @@ Pertemuan 7 - Request Method   GET & POSH
     <h1>Hallo, Selamat Datang, <?= $_POST["judul"]; ?>!</h1>
 <?php endif; ?>
 
-<form action="latihan4.php" method="post">
+<form action="" method="post">
     Masukan Judul Film:
     <input type="text" name="judul">
     <br>

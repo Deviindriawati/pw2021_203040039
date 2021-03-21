@@ -9,6 +9,8 @@ Pertemuan 7 - Request Method   GET & POSH
 */
 ?>
 
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +18,7 @@ Pertemuan 7 - Request Method   GET & POSH
 </head>
 <body>
 
-<h1>Selamat Datang <?= $_POST["judul"]; ?></h1>
+<h1>Selamat Datang, <?= $_POST["judul"]; ?>!</h1>
 
 </body>
 </html> 
