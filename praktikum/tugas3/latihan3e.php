@@ -35,7 +35,7 @@ $Novel = [
     
     ],
     [
-        "judul" => "Cinta Paling Ruit",
+        "judul" => "Cinta Paling Rumit",
         "penulis" => "Boy Candra",
         "penerbit" => "KataDepan",
         "harga" => "RP. 60.000,-",
