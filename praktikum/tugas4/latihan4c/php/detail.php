@@ -5,44 +5,46 @@
 ?>
 
 <?php
-// mengecek apakah ada id yang dikirimkan
-// jika tidak maka akan dikembalikan ke halaman index.php
-if(!isset($_GET['id'])) {
+if (!isset($_GET['id'])) {
     header("location: ../index.php");
     exit;
 }
-
-require 'functions.php';
-
-//Mengambil id dari url
-$id = $_GET['id'];
-
-// melakukan query dengan parameter id yang diambil dari url
-$Novel = query("SELECT * FROM novel WHERE id = $id")[0];
+require('functions.php');
+$id=$_GET["id"];
+$novel = query("SELECT * FROM novel WHERE id = $id")[0];
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Home Novel</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../pw2021_203040039/latihan4c/css/style.css">
-    </head>
-    <body>
-    <div class="container">
-    <div class="img">
-    <img src="../assets/img/<?= $nvl['img']; ?>" alt="">
-    </div>
-    <div class="keterangan">
-    <p><?= $nvl[Judul]; ?></p>
-    <p><?= $nvl[Penulis]; ?></p>
-    <p><?= $nvl[Penerbit]; ?></p>
-    <p><?= $nvl[Harga]; ?></p>
-    </div>
-    <button class="tombol-kembali"><a href="../index.php">Kembali</a><button>
-    </div>
+    <link rel="stylesheet" type="text/css" href="assets/Semantic-UI-CSS-master/Semantic-UI-CSS-master/semantic.min.css">
+    <script type="text/javascript" src="semantic.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" />
 
+
+
+</head>
+
+<body>
+    <h2 class="ui segment">Detail Novel<?= $novel ["judul"] ?></h2>
+    <div class="ui container">
+        <div class="ui card">  
+            <div class="content">
+            <div class="content">
+                <a class="header"><?= $novel ["penulis"] ?></a>
+                <div class="meta">
+                <a class="header"><?= $novel ["penerbit"]?></a>
+                <div class="meta">
+                    <span class="date">Rp.<?= $novel ["harga"] ?></span>
+                </div>
+                <div class="image">
+                <img src="../assets/img/<?= $novel ["img"] ?>">
+            </div>
+            </div>
+        </div>
+        <a href="../index.php"><button class="ui inverted olive button">Back Again</button></a>
+    </div>
 </body>
+
 </html>

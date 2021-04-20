@@ -17,33 +17,27 @@ $result = mysqli_query($conn, "SELECT * FROM novel");
 </head>
 
 <body>
-    <div class="container mb-3 mt-3">
-        <table class="table table-bordered">
-            <thead class="thead-dark">
-                <tr>
-                    <th scope="col">NO.</th>
-                    <th scope="col">Gambar</th>
-                    <th scope="col">Judul</th>
-                    <th scope="col">Penulis</th>
-                    <th scope="col">Penerbit</th>
-                    <th scope="col">Harga</th>
-                </tr>
-            </thead>
-            <?php $i = 1; ?>
-            <?php while($row = mysqli_fetch_assoc($result)) : ?>
-                <tr>
-                    <td><b><?= $i ?> </b></td>
-                    <td><img src="assets/img/<?= $row["img"]; ?>"></td>
-                    <td><b><?= $row["judul"]; ?></b></td>
-                    <td><b><?= $row["penulis"]; ?></b></td>
-                    <td><b><?= $row["penerbit"]; ?></b></td>
-                    <td><b><?= $row["harga"]; ?></b></td>
-                </tr>
-                <?php $i++; ?>
-            <?php endwhile; ?>
-            </tr>
-        </table>
-        <tbody>
+<div class="container">
+        <div class="grid">
+            <div class="row">
+                <?php 
+            foreach ($result as $nvl) :
+            ?>
+                <div class="cell-md-3">
+                    <div class="card">
+                        <div class="card-header">
+                            <img style="width: 80px" src="../latihan4c/assets/img/<?= $nvl['img'] ?>">
+                        </div>
+                        <div class="card-content p-2">
+                            <a class="text-center"
+                                href="php/detail.php?id=<?= $nvl["id"] ?>"><?= $nvl["judul"] ?> </a>
+                        </div>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
     </div>
+
     <!-- 203040039 -->
 </body>

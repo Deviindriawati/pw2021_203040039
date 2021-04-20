@@ -1,17 +1,11 @@
 <?php
-// Devi Indriawati
-// 203040039
-// Rabu 09.00 - 10.00
-?>
-
-<?php
-// $Novel = query("SELECT * FROM novel");
-
-$koneksi = mysqli_connect("localhost", "root", "");
+// koneksi ke database 
+$koneksi = mysqli_connect("localhost", "root","");
 mysqli_select_db($koneksi, "pw_tubes_203040039");
-$Novel = mysqli_query($koneksi, "SELECT * FROM novel");
-
+//untuk ambil query dari database 
+$result = mysqli_query($koneksi, "SELECT * FROM novel");
 ?>
+
 <!DOCTYPE html>
 <html lang>
 
@@ -30,10 +24,10 @@ $Novel = mysqli_query($koneksi, "SELECT * FROM novel");
                         <div class="ui action input">
                             <input type="text" placeholder="Search....">
                             <select class="ui compact selection dropdown">
-                                <option value="article">Judul</option>
-                                <option value="Product">Penulist</option>
-                                <option value="all">Penerbit</option>
-                                <option value="all">Harga</option>
+                                <option value="article">judul</option>
+                                <option value="Product">penulist</option>
+                                <option value="all">penerbit</option>
+                                <option value="all">harga</option>
 
                             </select>
                             <button class="ui button olive">Search</button>
@@ -54,24 +48,22 @@ $Novel = mysqli_query($koneksi, "SELECT * FROM novel");
                     <th>Penulis</th>
                     <th>Penerbit</th>
                     <th>Harga</th>
-
                 </tr>
                 </thead>
                 </tbody>
                 <?php $i=1;
-                    while ($row = mysqli_fetch_assoc($Novel)):
+                    while ($row = mysqli_fetch_assoc($result)):
                 ?>
-                <tr>
-                    <td><b><?= $i ?> </b></td>
-                    <td><img src="assets/img/<?= $row["img"]; ?>"></td>
-                    <td>
-                        <a href="php/detail.php?id=<?=$row['id'];?>">
-                            <?=$row["judul"];?>
-                        </a>
-                    </td>
-                    <td><b><?= $row["penulis"]; ?></b></td>
-                    <td><b><?= $row["penerbit"]; ?></b></td>
-                    <td><b><?= $row["harga"]; ?></b></td>
-                </tr>
-                <?php $i++; ?>
-                <?php endwhile; ?>
+                    <tr>
+                        <td><b><?= $i ?> </b></td>
+                        <td><img src="assets/img/<?= $row["img"]; ?>"></td>
+                        <td><b><?= $row["judul"]; ?></b></td>
+                        <td><b><?= $row["penulis"]; ?></b></td>
+                        <td><b><?= $row["penerbit"]; ?></b></td>
+                        <td><b><?= $row["harga"]; ?></b></td>
+                        <td>
+                            <a href="php/detail.php?id=<?= $row['id'] ?>">Detail</a>
+                        </td>
+                    </tr>
+                    <?php $i++; ?>
+                <?php endwhile ?>

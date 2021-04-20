@@ -33,7 +33,7 @@ $result = mysqli_query($conn, "SELECT * FROM novel");
             <?php while($row = mysqli_fetch_assoc($result)) : ?>
                 <tr>
                     <td><b><?= $i ?> </b></td>
-                    <td><img src="assets/img/<?= $row["img"]; ?>"></td>
+                    <td><img src="../assets/img/<?= $row["img"]; ?>"></td>
                     <td><b><?= $row["judul"]; ?></b></td>
                     <td><b><?= $row["penulis"]; ?></b></td>
                     <td><b><?= $row["penerbit"]; ?></b></td>
