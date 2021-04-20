@@ -61,4 +61,4 @@ $Novel = query("SELECT * FROM novel");
     <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 
-</html>ssssssss
+</html>
