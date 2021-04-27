@@ -16,7 +16,7 @@ $Novel = query("SELECT * FROM novel")
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
-    <link rel="stylesheet" href="css/mantap.css">
+    <link rel="stylesheet" href="css/oke.css">
     <title>Home Novel</title>
 </head>
 
@@ -28,7 +28,7 @@ $Novel = query("SELECT * FROM novel")
         <a href="php/login.php" class="waves-effect waves-light blue btn-small">Login Halaman Admin</a>
 
         <table class="centered highlight - white-text grey darken-3">
-            <tr class="z-depth-5 red darken-3 white-text">
+            <tr class="z-depth-5 blue lighten-3 white-text">
                 <th>No</th>
                 <th style="text-align: center;">Judul</th>
                 <th style="text-align: center;">Penulis</th>

@@ -28,12 +28,12 @@ if (isset($_POST["register"])) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
-    <link rel="stylesheet" href="css/mantap.css">
+    <link rel="stylesheet" href="css/oke.css">
     <title>Home Novel</title>
     <style>
     body {
-        background-color: rgb(37, 48, 48);
-        color: Bisque;
+        background-color: rgb(127, 194, 238);
+        color: azure;
     }
 
     h3 {

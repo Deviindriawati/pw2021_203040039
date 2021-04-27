@@ -7,9 +7,8 @@ tr {
 table, tr, td, th, thead {
     border: 1px solid black;
 }
-body{
-
-    background-color: black;
+body {
+    background-image: url(../assets/uwu.jpeg);
 }
 .h1 {
     color: aliceblue;
