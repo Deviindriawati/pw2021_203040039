@@ -1,0 +1,18 @@
+table {
+    margin: 20px;
+}
+tr {
+    width: 50%;
+}
+table, tr, td, th, thead {
+    border: 1px solid black;
+}
+body {
+    background-image: url(../assets/uwu.jpeg);
+}
+.h1 {
+    color: aliceblue;
+}
+.btn-small {
+    margin: 10px;
+}

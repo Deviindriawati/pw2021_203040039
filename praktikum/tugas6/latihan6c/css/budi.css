@@ -1,0 +1,15 @@
+table {
+    margin: 20px;
+}
+tr {
+    width: 50%;
+}
+table, tr, td, th, thead {
+    border: 1px solid rgb(144, 179, 211);
+}
+.h1 {
+    color: aliceblue;
+}
+.btn-small {
+    margin: 10px;
+}
