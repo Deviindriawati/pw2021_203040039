@@ -1,0 +1,10 @@
+body {
+  background-image: url(../assets/img/26.jpg);
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  background-image: url(../assets/img/28.jpg);
+  background-size: cover;
+}

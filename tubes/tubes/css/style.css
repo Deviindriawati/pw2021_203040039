@@ -1,0 +1,133 @@
+.brand-logo {
+  font-family: Viga;
+  font-size: 40px;
+}
+
+.tulisan {
+  font-family: 'Bree Serif', serif;
+  margin-top: 80px;
+  text-shadow: 3px 3px 3px rgba(255, 255, 255, 0.672);
+  font-size: 40px;
+  margin-bottom: auto;
+
+
+}
+
+section {
+  padding: 20px 0;
+  font-family: 'Bree Serif', serif;
+}
+
+
+
+.tulisan_login {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.kotak_login {
+  width: 350px;
+  box-shadow: -20px 20px 20px -20px rgb(230, 196, 111);
+  border-radius: 25px;
+  border: 1px solid grey;
+  margin: 80px auto;
+  padding: 30px 20px;
+}
+
+label {
+  font-size: 11pt;
+}
+
+.form_login {
+  /*membuat lebar form penuh*/
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+  font-size: 11pt;
+  margin-bottom: 20px;
+}
+
+.foto {
+  float: left;
+}
+
+.tombol_login {
+  background: #8d6e63;
+  font-size: 11pt;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+
+.tombol_registrasi {
+  background: #8d6e63;
+  font-size: 11pt;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 20px;
+}
+
+.background_reg {
+  background-image: url(../assets/img/26.jpg);
+  background-size: cover;
+}
+
+.remember {
+  float: left;
+  color: red;
+  text-shadow: 1px 1px 1px black;
+}
+
+
+.background {
+
+  background-image: url(../assets/img/26.jpg);
+  background-size: cover;
+}
+
+.parallax-container {
+  height: 360px;
+  font-family: 'Bree Serif', serif;
+
+
+}
+
+
+h2 {
+  font-family: 'Bree Serif', serif;
+
+
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+h5 {
+  font-family: 'Bree Serif', serif !important;
+
+}
+
+button {
+
+  font-family: 'Bree Serif', serif !important;
+  color: rgba(255, 255, 255, 0.919) !important;
+}
+
+.background1 {
+  background-image: url(../assets/img/25.jpg);
+  background-size: cover;
+
+}
+
+h1 {
+  font-family: 'Bree Serif', serif !important;
+}

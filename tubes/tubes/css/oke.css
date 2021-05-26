@@ -1,0 +1,13 @@
+body {
+    background-image: url(../assets/img/4.jpg);
+    padding: 20px;
+}
+
+.table {
+    font-weight: bold;
+}
+
+
+.btn-small {
+    margin: 10px;
+}
