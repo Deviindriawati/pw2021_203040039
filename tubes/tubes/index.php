@@ -47,11 +47,12 @@
       <div class="container">
         <div class="nav-wrapper">
           <a href="#!" class="brand-logo">NOVEL</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a href="../tubes/index.php">HOME</a></li>
             <li><a href="php/novel.php">ALL NOVEL</a></li>
             <li><a href="php/login.php" class="waves-effect #8d6e63 brown lighten-1 btn">LOGIN</a></li>
-            <li><a href="php/registrasi.php" class="waves-effect #8d6e63 brown lighten-1 btn">REGISTASI</a></li>
+            <li><a href="php/registrasi.php" class="waves-effect #8d6e63 brown lighten-1 btn">REGISTRASI</a></li>
 
           </ul>
         </div>
@@ -61,10 +62,10 @@
 
   <!--SideNav-->
   <ul class="sidenav" id="mobile-nav">
-    <li><a href="#HOME">HOME</a></li>
-    <li><a href="../tubes/php/novel.php">All Novel</a></li>
-    <li><a href="../tubes/php/login.php" class="waves-effect #795548 brown btn">SIGN IN</a></li>
-    <li><a href="../tubes/php/registrasi.php" class="waves-effect #795548 brown btn">REGISTER</a></li>
+    <li><a href="../tubes/index.php">HOME</a></li>
+    <li><a href="../tubes/php/novel.php">ALL NOVEL</a></li>
+    <li><a href="../tubes/php/login.php" class="waves-effect #795548 brown btn">LOGIN</a></li>
+    <li><a href="../tubes/php/registrasi.php" class="waves-effect #795548 brown btn">REGISTRASI</a></li>
   </ul>
 
   <!--Slider -->
