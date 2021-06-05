@@ -46,7 +46,12 @@ if (isset($_GET['cari'])) {
 
         .tr {
             font-weight: bold;
-            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: small;
+            font-family: Impact, 'Arial Narrow Bold', sans-serif;
+        }
+
+        .body {
+            font-size: small;
         }
     </style>
 </head>
@@ -62,7 +67,7 @@ if (isset($_GET['cari'])) {
                 <button class="waves-effect waves-light pink btn-small" type="submit" name="cari">Search</button>
             </form>
         </div>
-        <table class="highlight centered brown-text ">
+        <table class="highlight centered brown-text">
             <tr class="brown white-text">
                 <th>No</th>
                 <th>Judul</th>
@@ -104,6 +109,7 @@ if (isset($_GET['cari'])) {
             <div class="logout">
                 <a href="logout.php" class="waves-effect waves-light blue btn-small">Logout</a>
             </div>
+
     </div>
 </body>
 

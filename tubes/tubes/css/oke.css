@@ -1,10 +1,12 @@
 body {
     background-image: url(../assets/img/4.jpg);
     padding: 20px;
+    font-size: 1000px;
 }
 
 .table {
     font-weight: bold;
+    font-size: smaller;
 }
 
 

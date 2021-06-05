@@ -57,7 +57,7 @@ $Novel = query("SELECT * FROM novel")
         </script>
         <div class="container">
             <h1 class="centered brown-text center">All Novel</h1>
-            <a href="../php/login.php" class="waves-effect waves-light blue white-text btn-smal">Login Halaman Admin</a>
+            <a href="../php/login.php" class="waves-effect waves-light brown white-text btn-small">Login Halaman Admin</a>
             <div class="row">
                 <?php foreach ($Novel as $nvl) : ?>
                     <div class="col m4 s12">
