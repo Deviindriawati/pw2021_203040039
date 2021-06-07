@@ -37,6 +37,7 @@ if (isset($_GET['cari'])) {
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="../css/materialize.min.css" media="screen,projection" />
     <link rel="stylesheet" href="../css/oke.css">
+    <link rel="shorcut icon" href="logo2.jpeg">
     <title>Home Novel</title>
     <style>
         .container {
@@ -61,22 +62,22 @@ if (isset($_GET['cari'])) {
     <div class="container">
         <h1 class="centered white-text center">Admin Novel</h1>
         <div class="add">
-            <a href="tambah.php" class="waves-effect waves-light purple lighten-3 btn-small">Tambah Data</a>
+            <a href="tambah.php" class="waves-effect waves-light brown btn-small">Tambah Data</a>
             <form action="" method="GET">
                 <input class="white-text" type="text" name="keyword" autofocus placeholder="masukkan keyword.." autocomplete="off">
-                <button class="waves-effect waves-light pink btn-small" type="submit" name="cari">Search</button>
+                <button class="waves-effect waves-light lighten-3 btn-small" type="submit" name="cari">Search</button>
             </form>
         </div>
         <table class="highlight centered brown-text">
             <tr class="brown white-text">
-                <th>No</th>
-                <th>Judul</th>
-                <th>Penulis</th>
-                <th>Penerbit</th>
-                <th>Harga</th>
-                <th>Foto</th>
-                <th>Detail</th>
-                <th>Opsi</th>
+                <th style="text-align: center;">No</th>
+                <th style="text-align: center;">Judul</th>
+                <th style="text-align: center;">Penulis</th>
+                <th style="text-align: center;">Penerbit</th>
+                <th style="text-align: center;">Harga</th>
+                <th style="text-align: center;">Foto</th>
+                <th style="text-align: center;">Detail</th>
+                <th style="text-align: center;">Opsi</th>
             </tr>
             <?php if (empty($Novel)) : ?>
                 <tr>
@@ -89,18 +90,18 @@ if (isset($_GET['cari'])) {
                 <?php foreach ($Novel as $nvl) : ?>
                     <tr>
                         <td><?= $i ?></td>
-                        <td><?= $nvl["judul"]; ?></td>
-                        <td><?= $nvl["penulis"]; ?></td>
-                        <td><?= $nvl["penerbit"]; ?></td>
-                        <td><?= $nvl["harga"]; ?></td>
+                        <td style="font-size: 19px;"><?= $nvl["judul"]; ?></td>
+                        <td style="font-size: 19px;"><?= $nvl["penulis"]; ?></td>
+                        <td style="font-size: 19px;"><?= $nvl["penerbit"]; ?></td>
+                        <td style="font-size: 19px;"><?= $nvl["harga"]; ?></td>
                         <td><img width="100px" src="../assets/img/<?= $nvl["img"]; ?>" alt=""></td>
                         <td>
                             <p class="Nama">
                                 <a href="../php/detaill.php?id=<?= $nvl['id']; ?>">Lihat Produk</a>
                         </td>
                         <td>
-                            <a href="ubah.php?id=<?= $nvl['id'] ?>" class="waves-effect waves-light pink btn-small">Ubah</a>
-                            <a href="hapus.php?id=<?= $nvl['id'] ?>" class="waves-effect waves-light purple lighten-3 btn-small">Hapus</a>
+                            <a href="ubah.php?id=<?= $nvl['id'] ?>" class="waves-effect waves-light brown btn-small">Ubah</a>
+                            <a href="hapus.php?id=<?= $nvl['id'] ?>" class="waves-effect waves-light  lighten-3 btn-small">Hapus</a>
                         </td>
                     </tr>
                     <?php $i++ ?>

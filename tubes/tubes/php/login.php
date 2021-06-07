@@ -50,6 +50,7 @@ if (isset($_POST['submit'])) {
 <html>
 
 <head>
+    <link rel="shorcut icon" href="logo2.jpeg">
     <title></title>
 
 </head>

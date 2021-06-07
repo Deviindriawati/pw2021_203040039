@@ -1,7 +1,7 @@
 body {
     background-image: url(../assets/img/4.jpg);
     padding: 20px;
-    font-size: 1000px;
+    font-size: 20px;
 }
 
 .table {
@@ -12,4 +12,8 @@ body {
 
 .btn-small {
     margin: 10px;
+}
+
+.table .th {
+    font-size: 200px;
 }

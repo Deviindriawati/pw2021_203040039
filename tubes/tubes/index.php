@@ -37,7 +37,7 @@
       }
     }
   </style>
-
+  <link rel="shorcut icon" href="logo2.jpeg">
   <title>Devi Indriawati</title>
 </head>
 
@@ -120,7 +120,7 @@
   </section>
   <!-- Paralax -->
   <div class="parallax-container center">
-    <div class="parallax"><img src="../tubes/assets/img/9.jpg"></div>
+    <div class="parallax"><img src="../tubes/assets/img/2.jpg"></div>
     <div class="row">
       <div class="container novel">
       </div>
@@ -143,7 +143,6 @@
         <p>
           <center>© 2020 Copyright Deviindr</center>
         </p>
-
       </div>
     </div>
     </div>

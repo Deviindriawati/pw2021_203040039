@@ -49,6 +49,7 @@ $Novel = query("SELECT * FROM novel")
         font-style: italic;
     }
 </style>
+<link rel="shorcut icon" href="../logo2.jpeg">
 <title>All Novel</title>
 
 <body>

@@ -20,6 +20,7 @@ $Novel = query("SELECT * FROM novel WHERE id = $Id")[0];
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <link rel="shorcut icon" href="../logo2.jpeg">
     <title>Detail Novel</title>
     <style>
         body {
