@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 25, 2021 at 05:16 PM
+-- Generation Time: Jun 08, 2021 at 08:09 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -69,12 +69,13 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `username`, `password`) VALUES
-(0, 'devi', '$2y$10$MRSwIHR.U/a8/puhgK2gBu5W1Ge/fxRenPRdRoF4dn/XydyQnSztG'),
-(0, 'devi12345', '$2y$10$ceC4kjGi0PVAD72jt5qaMunXtt.VmkDkppC0RmUeDeXzUJEbQKK4a'),
-(0, 'devi13', '$2y$10$cyeR73x10nd8X.FDainEMe/H.PNIsBRpxjMSO5NxEgzB2F2xf8Fjq'),
-(0, '', '$2y$10$wZ13/NAYgosIEcA5yCwlZ.4PJnrp7YGm/wge5wvEYx42aC3ipkuZC'),
-(0, 'dev', '$2y$10$sZLxedY6wJFal9hSduLlb.vP3aZPWYCuTaxyYfR/I3W7iagRT.a/6'),
-(0, 'indy', '$2y$10$DDk9.m7tDldRuqCRA5A3W.obeC0nXnkRxDaZA.FiRhgNlUb3R3E12');
+(1, 'devi', '$2y$10$MRSwIHR.U/a8/puhgK2gBu5W1Ge/fxRenPRdRoF4dn/XydyQnSztG'),
+(2, 'devi12345', '$2y$10$ceC4kjGi0PVAD72jt5qaMunXtt.VmkDkppC0RmUeDeXzUJEbQKK4a'),
+(3, 'devi13', '$2y$10$cyeR73x10nd8X.FDainEMe/H.PNIsBRpxjMSO5NxEgzB2F2xf8Fjq'),
+(4, '', '$2y$10$wZ13/NAYgosIEcA5yCwlZ.4PJnrp7YGm/wge5wvEYx42aC3ipkuZC'),
+(5, 'dev', '$2y$10$sZLxedY6wJFal9hSduLlb.vP3aZPWYCuTaxyYfR/I3W7iagRT.a/6'),
+(6, 'indy', '$2y$10$DDk9.m7tDldRuqCRA5A3W.obeC0nXnkRxDaZA.FiRhgNlUb3R3E12'),
+(7, 'devi123', '$2y$10$4LB1u4HhTh25W0YrR46HuuLuBkK17G8V382q7HmAQVhL/GyXWVKS6');
 
 --
 -- Indexes for dumped tables
@@ -87,6 +88,12 @@ ALTER TABLE `novel`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -94,7 +101,13 @@ ALTER TABLE `novel`
 -- AUTO_INCREMENT for table `novel`
 --
 ALTER TABLE `novel`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+
+--
+-- AUTO_INCREMENT for table `user`
+--
+ALTER TABLE `user`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
